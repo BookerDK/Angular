@@ -1,0 +1,12 @@
+<h1>{{titulo}}</h1>
+<h2>Hola mundo, soy mi componente</h2>
+<p>Mi primer componente!!!!</p>
+<p>{{comentario}}</p>
+<p>{{year}}</p>
+<hr />
+<button (click)="ocultarPeliculas()">Ocultar Pelis</button>
+<div *ngIf="mostrarPeliculas">
+    <p>soy un parrafo</p>
+    <hr />
+    <app-pruebas></app-pruebas><hr />
+</div>
