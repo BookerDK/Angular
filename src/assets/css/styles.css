@@ -27,6 +27,24 @@ body{
     float: none;
 }
 
+.year-green{
+    display: block;
+    background: green;
+    color: white;
+    padding: 5px;
+    width: 122px;
+    text-align: center;
+}
+
+.year-red{
+    display: block;
+    background: red;
+    color: white;
+    padding: 5px;
+    width: 122px;
+    text-align: center;
+}
+
 #logo{
     width: 30%;
     font-size: 30px;

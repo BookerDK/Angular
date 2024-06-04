@@ -1,0 +1,27 @@
+<!--COMPONENTE HIJO-->
+<article class="article-item">
+    <!--Muesta las peliculas y recorre el array de ellas-->
+    <div class="image-wrap">
+        <img src="{{pelicula.image}}" alt="{{pelicula.title}}" />
+    </div>
+    <h2>{{pelicula.title}}</h2><!--Muesta el titulo de la pelicula-->
+    <span class="date">
+        Hace 5 minutos
+    </span>
+
+    <!--[class.year-green]="pelicula.year > 2016"
+[class.year-red]="pelicula.year < 2016"-->
+    <!--[style.background]="pelicula.year > 2016 ? 'green' : 'red' "-->
+    <span class="year" [ngClass]="{
+    'year-green': pelicula.year > 2016,
+    'year-red': pelicula.year < 2016
+}">
+        {{pelicula.year}}
+    </span>
+    <a href="#">Leer mas</a>
+    <button (click)="seleccionar($event, pelicula)">
+        Seleccionar como favorita
+    </button>
+
+    <div class="clearfix"></div>
+</article>
