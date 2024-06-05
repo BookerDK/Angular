@@ -17,6 +17,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { ErrorComponent } from './components/error/error.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
+import { EsParPipe } from './pipes/espar.pipe'; //Cargando el pipe creado por nosotros
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
     BlogComponent,
     FormularioComponent,
     ErrorComponent,
-    PeliculaComponent
+    PeliculaComponent,
+    EsParPipe
   ],
   imports: [
     BrowserModule,

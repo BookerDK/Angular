@@ -15,6 +15,7 @@ export class PeliculasComponent implements OnInit, DoCheck, OnDestroy{
   public title: string;
   public peliculas: Pelicula[];
   public favorita!: Pelicula;
+  public fecha: any;
   
   constructor(){
     this.title = "Componente peliculas!!!!";
@@ -24,6 +25,7 @@ export class PeliculasComponent implements OnInit, DoCheck, OnDestroy{
       new Pelicula("Batman vs Superman", 2020, "https://m.media-amazon.com/images/S/pv-target-images/1f6b215833e5facff176b40d56e4a9af4d0666f0e3ca23e290442eb16ef2dfa9.jpg")
     ];
     console.log("Constructor lanzado!!!!");
+    this.fecha = new Date(2020, 8, 12);
   }
 
   ngOnInit(): void {

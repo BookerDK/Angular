@@ -12,10 +12,13 @@
                 Pelicula favorita
             </h2>
             <h4>
-                {{favorita?.title}}
+                {{favorita.title | uppercase}}<!--El "?"  safe navigation operator". Esto es especialmente útil cuando estás accediendo a propiedades de objetos que podrían ser nulas o indefinidas en ciertas circunstancias.-->
             </h4>
             <h5>
-                {{favorita?.year}}
+                {{favorita.year | espar}}
+            </h5>
+            <h5>
+                {{this.fecha | date: 'dd/MM/yyyy'}}
             </h5>
         </div>
 
